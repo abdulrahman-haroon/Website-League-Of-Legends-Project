@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Add Product</title>
+
+  <!-- Favicons -->
+    <link href="img/titleLogo2.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/datepicker.css" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-daterangepicker/daterangepicker.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+
+<body ng-app="AdminDashboard" ng-controller="myController">
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+      <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+              <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+          </div>
+          <!--logo start-->
+          <a href="index.html" class="logo"><b>RIOT<span style="color:gray">GAMES</span></b></a>
+          <!--logo end-->
+          <div class="nav notify-row" id="top_menu">
+              <!--  notification start -->
+              <ul class="nav top-menu">
+                  <!-- settings start -->
+                  <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                          <i class="fa fa-tasks"></i>
+                          <span class="badge bg-theme">4</span>
+                      </a>
+                      <ul class="dropdown-menu extended tasks-bar">
+                          <div class="notify-arrow notify-arrow-green"></div>
+                          <li>
+                              <p class="">You have 4 pending tasks</p>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <div class="task-info">
+                                      <div class="desc">Admin Panel</div>
+                                      <div class="percent">40%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                          <span class="sr-only">40% Complete (success)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <div class="task-info">
+                                      <div class="desc">Database Update</div>
+                                      <div class="percent">60%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                          <span class="sr-only">60% Complete (warning)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <div class="task-info">
+                                      <div class="desc">Product Development</div>
+                                      <div class="percent">80%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                          <span class="sr-only">80% Complete</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <div class="task-info">
+                                      <div class="desc">Payments Sent</div>
+                                      <div class="percent">70%</div>
+                                  </div>
+                                  <div class="progress progress-striped">
+                                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                          <span class="sr-only">70% Complete (Important)</span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </li>
+                  <!-- settings end -->
+                  <!-- inbox dropdown start-->
+                  <li id="header_inbox_bar" class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                          <i class="fa fa-envelope-o"></i>
+                          <span class="badge bg-theme">5</span>
+                      </a>
+                      <ul class="dropdown-menu extended inbox">
+                          <div class="notify-arrow notify-arrow-green"></div>
+                          <li>
+                              <p class="green">You have 5 new messages</p>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="photo"><img alt="avatar" src="img/ui-zac.jpg"></span>
+                                  <span class="subject">
+                                      <span class="from">Zac Snider</span>
+                                      <span class="time">Just now</span>
+                                  </span>
+                                  <span class="message">
+                                      Hi mate, how is everything?
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="photo"><img alt="avatar" src="img/ui-divya.jpg"></span>
+                                  <span class="subject">
+                                      <span class="from">Divya Manian</span>
+                                      <span class="time">40 mins.</span>
+                                  </span>
+                                  <span class="message">
+                                      Hi, I need your help with this.
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="photo"><img alt="avatar" src="img/ui-danro.jpg"></span>
+                                  <span class="subject">
+                                      <span class="from">Dan Rogers</span>
+                                      <span class="time">2 hrs.</span>
+                                  </span>
+                                  <span class="message">
+                                      Love your new Dashboard.
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="photo"><img alt="avatar" src="img/ui-sherman.jpg"></span>
+                                  <span class="subject">
+                                      <span class="from">Dj Sherman</span>
+                                      <span class="time">4 hrs.</span>
+                                  </span>
+                                  <span class="message">
+                                      Please, answer asap.
+                                  </span>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </li>
+                  <!-- inbox dropdown end -->
+                  <!-- notification dropdown start-->
+                  <li id="header_notification_bar" class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                          <i class="fa fa-bell-o"></i>
+                          <span class="badge bg-warning">7</span>
+                      </a>
+                      <ul class="dropdown-menu extended notification">
+                          <div class="notify-arrow notify-arrow-yellow"></div>
+                          <li>
+                              <p class="yellow">You have 7 new notifications</p>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                  Server Overloaded.
+                                  <span class="small italic">4 mins.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-warning"><i class="fa fa-bell"></i></span>
+                                  Memory #2 Not Responding.
+                                  <span class="small italic">30 mins.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-danger"><i class="fa fa-bolt"></i></span>
+                                  Disk Space Reached 85%.
+                                  <span class="small italic">2 hrs.</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="index.html#">
+                                  <span class="label label-success"><i class="fa fa-plus"></i></span>
+                                  New User Registered.
+                                  <span class="small italic">3 hrs.</span>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </li>
+                  <!-- notification dropdown end -->
+              </ul>
+              <!--  notification end -->
+          </div>
+          <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                  <li><a class="logout" href="form_componentchangepass.html">Change Password</a></li>
+                  <li><a class="logout" href="" ng-click="Logout()">Logout {{userInfo}}</a></li>
+              </ul>
+          </div>
+      </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <p class="centered"><img src="img/shoplogo.png" class="img-circle" width="100"></p>
+                  <h5 class="centered">Welcome !</h5>
+                  <h5 class="centered">{{userInfo}}</h5>
+                  <li class="mt">
+                      <a  href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+
+
+
+                  <li class="sub-menu">
+                      <a class="active" href="javascript:;">
+                          <i class="fa fa-tasks"></i>
+                          <span>Products</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="form_component.html">Add a product</a></li>
+                          <li><a href="responsive_table.html">Edit | Delete products</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;">
+                          <i class="fa fa-th"></i>
+                          <span>Categories</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="form_component2.html">Add a category</a></li>
+                          <li><a href="responsive_table2.html">Edit | Delete Category</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;">
+                          <i class="fa fa-address-book"></i>
+                          <span>Users</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="form_componentusers.html">Add a user</a></li>
+                      </ul>
+                  </li>
+                 
+                  <li>
+                      <a href="inbox.html">
+                          <i class="fa fa-envelope"></i>
+                          <span>Mail </span>
+                          <span class="label label-theme pull-right mail-info">3</span>
+                      </a>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+              <h3><i class="fa fa-angle-right"></i> Add a product</h3>
+              <!-- BASIC FORM ELELEMNTS -->
+              <div class="row mt">
+                  <div class="col-lg-12">
+                      <div class="form-panel">
+                          <h4 class="mb"><i class="fa fa-angle-right"></i> Please fill the form</h4>
+                          <form class="form-horizontal style-form" >
+                              <div class="form-group">
+                                  <label class="col-sm-2 col-sm-2 control-label">Id</label>
+                                  <div class="col-sm-10">
+                                      <input type="number" class="form-control" placeholder="Enter Id unqine" ng-model="id">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label class="col-sm-2 col-sm-2 control-label">Product Name</label>
+                                  <div class="col-sm-10">
+                                      <input type="text" class="form-control" placeholder="Enter Name" ng-model="productname">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label class="col-sm-2 col-sm-2 control-label">Unit Sold</label>
+                                  <div class="col-sm-10">
+                                      <input type="number" class="form-control" placeholder="00" ng-model="unitsold">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label class="col-sm-2 col-sm-2 control-label">Price Item</label>
+                                  <div class="col-sm-10">
+                                      <input type="text" class="form-control " placeholder="00.00" ng-model="priceitem">
+                                  </div>
+                              </div>
+
+                              <div class="form-group">
+                                  <label class="col-sm-2 col-sm-2 control-label">Expire Date</label>
+                                  <div class="col-sm-10">
+                                      <input class="form-control"  type="text" placeholder="6th June 2020" ng-model="expiredate">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                      <button class="btn btn-theme" ng-click="addNewRecord()">Add a product</button>
+                                  </div>
+                              </div>
+                          </form>
+                         
+                             
+                          
+                      </div>
+                     
+                  </div>
+                  <!-- col-lg-12-->
+              </div>
+              <h3><i class="fa fa-angle-right"></i> View Products</h3>
+              <div class="row mt">
+                  <div class="col-lg-12">
+                      <div class="content-panel">
+                          <h4><i class="fa fa-angle-right"></i> Following are the complete data of products</h4>
+                          <section id="unseen">
+                              <table class="table table-bordered table-striped table-condensed">
+                                  <thead>
+                                      <tr>
+                                          <th class="numeric">Id</th>
+                                          <th class="numeric">Product Name</th>
+                                          <th class="numeric">Unit Sold </th>
+                                          <th class="numeric">Price Item</th>
+                                          <th class="numeric">Expire Date</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody id="tabcontent">
+                                      <tr ng-repeat="x in data">
+                                          <td>{{ x.Id }}</td>
+                                          <td>{{ x.ProductName }}</td>
+                                          <td>{{ x.UnitSold }}</td>
+                                          <td>{{ x.PriceItem }}</td>
+                                          <td>{{ x.ExpireDate }}</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </section>
+                      </div>
+                      <!-- /content-panel -->
+                  </div>
+                  <!-- /col-lg-4 -->
+              </div>
+          </section>
+          <!-- /wrapper -->
+      </section>
+      <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    
+    
+  </section>
+
+    <script>
+		var myApp = angular.module('AdminDashboard', []);
+					myApp.controller("myController", function ($scope, $http) {
+						$scope.displayForAdd=function(){
+							$scope.operation="Add New Record";
+							$("#btnDelete").hide();
+							$("#btnUpdate").hide();
+						}
+						$scope.displayForUpdate = function (value) {
+							$scope.operation="Update Record";
+							$scope.Id=value.Id;
+							$scope.FirstName=value.FirstName;
+							$scope.LastName=value.LastName;
+							$scope.City=value.City;
+							$scope.Country=value.Country;
+							$scope.Address=value.Address;
+							$scope.Contact=value.Contact;
+							$("#btnDelete").hide();
+							$("#btnAdd").hide();
+						}
+						$scope.displayForRemove = function (value) {
+							$scope.operation="Remove Record";
+							$scope.Id=value.Id;
+							$scope.FirstName=value.FirstName;
+							$scope.LastName=value.LastName;
+							$scope.City=value.City;
+							$scope.Country=value.Country;
+							$scope.Address=value.Address;
+							$scope.Contact=value.Contact;
+							$("#btnUpdate").hide();
+							$("#btnAdd").hide();
+						}
+                        $scope.addNewRecord = function () {
+                            var product = {
+                                "Id": $scope.id,
+                                "ProductName": $scope.productname,
+                                "UnitSold": $scope.unitsold,
+                                "PriceItem": $scope.priceitem,
+                                "ExpireDate": $scope.expiredate,
+                              
+                            };
+                            ///////////Add RECORD/////////////////
+                            var req = {
+                                method: 'POST',
+                                url: '/api/Products/',
+                                data: product,
+                                headers: {
+                                    'Content-Type': 'application/json; charset=utf-8',
+                                    'Accept': 'application/json',
+                                    'Authorization': 'bearer ' + localStorage.getItem('token')
+                                }
+                            }
+                            //data, status, headers, config
+                            $http(req).then(function (response) {
+                                $scope.data = response.data;
+                                alert("Successfully Added");
+                                window.location.href = "/Dashio/form_component.html";
+                            },
+                                        function (response) { alert("failed " + JSON.stringify(response)); });
+                            /////////////////////////////////////////
+                        }
+						$scope.deleteRecord=function(){
+                             ///////////Add RECORD/////////////////
+                            var req = {
+                                method: 'DELETE',
+                                url: '/api/customers/'+$scope.Id,
+                                headers: {
+                                    'Content-Type': 'application/json; charset=utf-8',
+                                    'Accept': 'application/json',
+                                    'Authorization': 'bearer ' + localStorage.getItem('token')
+                                }
+                            }
+                            //data, status, headers, config
+                            $http(req).then(function (response) { $scope.data = response.data; resetOptions(); },
+                                        function (response) { alert("failed " + response.status); });
+                            /////////////////////////////////////////
+						}
+                        $scope.updateRecord = function () {
+                            var customer = {
+                                "Id": $scope.Id,
+                                "FirstName": $scope.FirstName,
+                                "LastName": $scope.LastName,
+                                "City": $scope.City,
+                                "Country": $scope.Country,
+                                "Address": $scope.Address,
+                                "Contact": $scope.Contact
+                            };
+                            ///////////UPDATE RECORD/////////////////
+                            var req = {
+                                method: 'PUT',
+                                url: '/api/customers/' + $scope.Id,
+                                data: customer,
+                                headers: {
+                                    'Content-Type': 'application/json; charset=utf-8',
+                                    'Accept': 'application/json',
+                                    'Authorization': 'bearer ' + localStorage.getItem('token')
+                                }
+                            }
+                            //data, status, headers, config
+                            $http(req).then(function (response) { $scope.data = response.data; resetOptions(); },
+                                        function (response) { alert("failed " + response.status); });
+                            /////////////////////////////////////////
+                        }
+						resetOptions=function(){
+							$("#btnDelete").show();
+							$("#btnAdd").show();
+							$("#btnUpdate").show();
+                        }
+                        /////////////////////////CODE TO BE EXEWCUTED ON PAGE LOAD////////////////////////////////
+						//code that executes on page load without call
+                        var req = {
+                            method: 'GET',
+                            url: '/api/Products',
+                            headers: {
+                                'Content-Type': 'application/json; charset=utf-8',
+                                'Accept': 'application/json',
+                                'Authorization': 'bearer ' + localStorage.getItem('token')
+                            }
+                        }
+                        //data, status, headers, config
+                        $http(req).then(function (response) { $scope.data = response.data; },
+                                        function (response) { alert("failed " + response.status); });
+                         var req = {
+                            method: 'GET',
+                            url: '/api/account/UserInfo',
+                            headers: {
+                                'Content-Type': 'application/json; charset=utf-8',
+                                'Accept': 'application/json',
+                                'Authorization': 'bearer ' + localStorage.getItem('token')
+                            }
+                         }
+                         var req = {
+                             method: 'GET',
+                             url: '/api/account/UserInfo',
+                             headers: {
+                                 'Content-Type': 'application/json; charset=utf-8',
+                                 'Accept': 'application/json',
+                                 'Authorization': 'bearer ' + localStorage.getItem('token')
+                             }
+                         }
+					    //data, status, headers, config
+					    //alert(JSON.stringify(response.data.Email));
+                        $http(req).then(function (response) { $scope.userInfo = response.data.Email; },
+                                      function (response) { alert("failed " + response.status); });
+                        $scope.Logout = function () {
+
+                            var req = {
+                                method: 'POST',
+                                url: '/api/Account/Logout',
+                                headers: {
+                                    'Content-Type': 'application/json; charset=utf-8',
+                                    'Accept': 'application/json',
+                                    'Authorization': 'bearer ' + localStorage.getItem('token')
+                                }
+                            }
+                            //data, status, headers, config
+                            $http(req).then(function (response) {
+                                $scope.data = response.data;
+                                alert("Successfull Logout");
+                                window.location.href = "/Shop/fashe-colorlib/index.html";
+                            }, function (response) {
+
+                                console.log($scope.id1);
+                                alert("failed " + response.status);
+                            });
+                            /////////////////////////////////////////
+                        }
+
+                    });
+    </script>
+ 
+
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+  <!--custom switch-->
+  <script src="lib/bootstrap-switch.js"></script>
+  <!--custom tagsinput-->
+  <script src="lib/jquery.tagsinput.js"></script>
+  <!--custom checkbox & radio-->
+  <script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-daterangepicker/date.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+  <script src="lib/form-component.js"></script>
+
+</body>
+
+</html>

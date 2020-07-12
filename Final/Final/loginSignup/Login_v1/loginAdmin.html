@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign In</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" href="../../images/titleLogo2.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill9/dist/polyfill.js"></script>
+</head>
+<body>
+	
+	<div class="limiter ">
+		<div class="container-login100 ">
+			<div class="wrap-login100">
+
+				<div class="login100-pic js-tilt" data-tilt>
+					<br />
+					<img src="images/01.gif" alt="IMG">
+
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Admin Sign In
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+							<button ><a href="../../product admin/index.html" style="color:black; font-size:24px">Login</a></button>
+					</div>
+
+					<div class="text-center p-t-12 ">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" id="bt" href="#">
+							Username / Password?
+						</a>
+					</div>
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Back To:
+						</span>
+						<a class="txt2" href="../../Shop/fashe-colorlib/index.html">
+							Shop
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="../../Signup/Login_v1/index.html">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById('bt').addEventListener('click',
+			function () {
+				document.querySelector('.backgroundModal').style.display = 'flex';
+			});
+		document.querySelector('.closeBut').addEventListener('click', function () {
+			document.querySelector('.backgroundModal').style.display = 'none';
+		});
+	</script>
+	<div style="background-color:black">
+		<p style="text-align:center"><img src="../../images/02.png" /></p>
+		<p style="color:white;text-align:center" ">© 2020 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
+	</div>
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
